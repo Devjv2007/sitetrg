@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 interface HeroProps {
-  heroRef?: any;  // ← Simplifique para any
+  heroRef?: any;  
 }
 
 export const Hero = ({ heroRef }: HeroProps) => {
@@ -13,7 +13,6 @@ export const Hero = ({ heroRef }: HeroProps) => {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 -m-36">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:min-h-[600px] py-16 md:py-24">
 
-            {/* Coluna de Texto Desktop */}
             <div className="order-2 md:order-1 flex flex-col justify-center reveal animate-fade-right my-45">
               <h1 className="text-3xl font-serif text-[#1F2E25] md:text-4xl">
                 Encontre o equilíbrio que você precisa
@@ -54,7 +53,6 @@ export const Hero = ({ heroRef }: HeroProps) => {
               </ul>
             </div>
 
-            {/* Coluna da Foto Desktop */}
             <div className="order-1 md:order-2 md:absolute md:right-0 py-70 md:top-24 md:w-1/2 md:px-8 reveal animate-fade-left">
               <div className="bg-white rounded-2xl shadow-xl p-8 md:p-8 md:py-40 border -my-35 border-gray-100 md:min-h-[600px]">
                 <div className="relative w-full max-w-md mx-auto">
@@ -77,12 +75,10 @@ export const Hero = ({ heroRef }: HeroProps) => {
         </div>
       </div>
 
-      {/* VERSÃO MOBILE */}
        <div className="block md:hidden">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 m-0 mt-6">
           <div className="grid grid-cols-1 gap-10 py-16">
 
-            {/* Foto Mobile */}
             <div className="order-1 relative w-full reveal animate-fade-left">
               <div className="relative w-full max-w-sm mx-auto bg-white/60 backdrop-blur p-3 rounded-3xl -mt-10">
                 <img
@@ -97,7 +93,6 @@ export const Hero = ({ heroRef }: HeroProps) => {
               </div>
             </div>
 
-            {/* Texto Mobile */}
             <div className="order-2 text-center my-8 reveal animate-fade-right">
               <h1 className="text-3xl font-serif text-[#1F2E25]">
                 Encontre o equilíbrio que você precisa

@@ -2,7 +2,7 @@ import type { RefObject } from 'react';
 
 
 interface ServicesSectionProps {
-  atendRef?: RefObject<HTMLElement | null>;  // ← | null
+  atendRef?: RefObject<HTMLElement | null>;  
 }
 
 export const ServicesSection = ({ atendRef }: ServicesSectionProps) => {

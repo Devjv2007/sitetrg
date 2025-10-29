@@ -33,8 +33,7 @@ export const Header = () => {
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-200 ${scrolled ? 'bg-white shadow-md' : 'bg-[#F6F2E9]'}`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          
-          {/* Logo */}
+
           <a href="#" className="flex items-center gap-2" aria-label="Ir para início">
             <img
               src="/trg-Photoroom.png"
@@ -46,7 +45,6 @@ export const Header = () => {
             </span>
           </a>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <a 
@@ -70,7 +68,6 @@ export const Header = () => {
             </Link>
           </nav>
 
-          {/* Mobile Menu Button */}
           <button
             onClick={() => setOpen(!open)}
             className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100"
@@ -89,7 +86,6 @@ export const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Backdrop */}
       {open && (
         <button
           onClick={() => setOpen(false)}
@@ -98,7 +94,6 @@ export const Header = () => {
         />
       )}
 
-      {/* Mobile Menu */}
       <div
         id="mobile-menu"
         className={`fixed left-0 right-0 top-16 z-50 md:hidden transform origin-top transition-all duration-200 ${

@@ -1,7 +1,7 @@
 import type { RefObject } from 'react';
 
 interface AboutSectionProps {
-  sobreRef?: RefObject<HTMLElement | null>;  // ← | null
+  sobreRef?: RefObject<HTMLElement | null>;  
 }
 
 export const AboutSection = ({ sobreRef }: AboutSectionProps) => {

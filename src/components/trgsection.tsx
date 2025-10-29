@@ -14,7 +14,7 @@ export const TRGSection = ({ galeriaRef }: TRGSectionProps) => {
   return (
     <section id="trg" className="w-full py-16 md:py-20">
       <div className="mx-auto max-w-7xl px-6">
-        {/* Seção TRG */}
+
         <section className="text-center reveal animate-fade-up">
           <h2 className="text-3xl md:text-4xl font-serif  md:mt-24 text-[#1F2E25]">
             Conheça a TRG
@@ -24,7 +24,6 @@ export const TRGSection = ({ galeriaRef }: TRGSectionProps) => {
           </p>
         </section>
 
-        {/* Galeria */}
         <section
           ref={galeriaRef}
           className="reveal animate-fade-up grid grid-cols-2 gap-4 mt-12 md:grid-cols-4"
