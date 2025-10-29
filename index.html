@@ -9,18 +9,6 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script>
-  // Bloqueia F12, Ctrl+Shift+I/J, Ctrl+U e botão direito (opcional)
-  document.addEventListener('keydown', (e) => {
-    // F12
-    if (e.key === 'F12' || e.keyCode === 123) { e.preventDefault(); }
-    // Ctrl+Shift+I / J
-    if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) { e.preventDefault(); }
-    // Ctrl+U (ver código-fonte)
-    if (e.ctrlKey && (e.key === 'U')) { e.preventDefault(); }
-  });
-  // Desabilitar menu de contexto (clique direito)
-  document.addEventListener('contextmenu', (e) => e.preventDefault());
-</script>
+
   </body>
 </html>
