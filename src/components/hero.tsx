@@ -8,7 +8,7 @@ export const Hero = ({ heroRef }: HeroProps) => {
   
   return (
     <div ref={heroRef}>
-      {/* VERSÃO DESKTOP */}
+
        <div className="hidden md:block">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 -m-36">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:min-h-[600px] py-16 md:py-24">
@@ -53,13 +53,13 @@ export const Hero = ({ heroRef }: HeroProps) => {
               </ul>
             </div>
 
-            <div className="order-1 md:order-2 md:absolute md:right-0 py-70 md:top-24 md:w-1/2 md:px-8 reveal animate-fade-left">
-              <div className="bg-white rounded-2xl shadow-xl p-8 md:p-8 md:py-40 border -my-35 border-gray-100 md:min-h-[600px]">
+            <div className="order-1 md:order-2 md:absolute md:right-0 py-65 md:top-24 md:w-1/2 md:px-8 reveal animate-fade-left">
+              <div className="bg-white rounded-2xl shadow-xl p-8 md:p-8 md:py-40 border -my-35 border-gray-100 md:min-h-[550px]">
                 <div className="relative w-full max-w-md mx-auto">
                   <img
                     src="/claudiodelado-Photoroom.png"
                     alt="Foto do Terapeuta"
-                    className="w-full -my-70"
+                    className="w-96 m-5 -my-70"
                     style={{
                       maskImage: 'linear-gradient(to bottom, black 50%, transparent 100%)',
                       WebkitMaskImage: 'linear-gradient(to bottom, black 90%, transparent 100%)'
